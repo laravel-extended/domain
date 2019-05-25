@@ -10,7 +10,9 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "laravel-extended/material": "dev-master"
+    },
     "require-dev": {
         "phpunit/phpunit": "^8.2@dev"
     },
@@ -23,5 +25,8 @@
         "psr-4": {
             "Extended\\Domain\\Tests\\": "tests/"
         }
+    },
+    "suggest": {
+        "laravel-extended/rbac": "Required to use all features of authorization module."
     }
 }
