@@ -15,6 +15,10 @@ class Controller
      */
     public function callAction($method, $parameters)
     {
+        if (! $this->service instanceof Service) {
+            throw new \Exception('No service created');
+        }
+
         return $this->service->dispatch('controller::'.$method, [$this, $method], $parameters);
     }
 }
