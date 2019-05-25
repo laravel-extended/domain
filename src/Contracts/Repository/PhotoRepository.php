@@ -7,4 +7,6 @@ interface PhotoRepository extends Repository
     public function create($attributes);
 
     public function person($person);
+
+    public function getByOwner($ids);
 }
